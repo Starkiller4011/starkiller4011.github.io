@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.mainWrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
+	position: relative;
+}
+
+.mainWrapper::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 15vh;
+	background-color: #0000ff4d;
+	z-index: 2;
+}
+
+header .menuIcon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 8vh;
+	padding: 3vh;
+}
+
+.debugLog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.banner {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+#mainBanner {
+	height: 700px;
+	background-image: url("../img/oceanSunset3.jpg");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	-webkit-background-size: 100vw;
+	-moz-background-size: 100vw;
+	-o-background-size: 100vw;
+	background-size: 100vw;
+}
+
+.scrollHiddenBanner {
+	position: fixed;
+	top: 0;
+	height: 15vh !important;
+	z-index: 1;
+}
+
+section {
+	padding: 0 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+}
+
+section article {
+	width: 90vw;
+	height: 20vh;
+	background: #ccc;
+	margin: 10px auto;
+}
