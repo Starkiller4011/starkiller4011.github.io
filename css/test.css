@@ -21,15 +21,7 @@ header {
 	width: 100vw;
 	height: 15vh;
 	background-color: #0000ff4d;
-	z-index: 2;
-}
-
-header .menuIcon {
-	position: absolute;
-	top: 0;
-	left: 0;
-	font-size: 8vh;
-	padding: 3vh;
+	z-index: 3;
 }
 
 .debugLog {
@@ -38,30 +30,42 @@ header .menuIcon {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
+	width: 300px;
+}
+
+.debugLog .attributes {
+	display: block;
+	height: 20px;
+}
+
+.attributes div {
+	display: inline-block;
+	height: inherit;
+	margin-right: -50%;
+}
+
+.attributes p {
+	margin: 0 auto;
+	float: left;
+	text-align: center;
 }
 
 .banner {
 	width: 100vw;
-	margin: 0;
-	padding: 0;
 }
 
 #mainBanner {
-	height: 700px;
-	background-image: url("../img/oceanSunset3.jpg");
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	-webkit-background-size: 100vw;
-	-moz-background-size: 100vw;
-	-o-background-size: 100vw;
-	background-size: 100vw;
+	position: relative;
+	top: 0;
 }
 
-.scrollHiddenBanner {
-	position: fixed;
-	top: 0;
-	height: 15vh !important;
-	z-index: 1;
+#mainBanner img {
+	width: inherit;
+}
+
+.headerBanner {
+	position: fixed !important;
+	transform: 0;
 }
 
 section {
@@ -82,3 +86,4 @@ section article {
 	background: #ccc;
 	margin: 10px auto;
 }
+
