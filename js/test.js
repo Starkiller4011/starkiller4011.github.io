@@ -20,10 +20,12 @@ var debugScrollPosition = $("#scrollPosition");
 
 // Scroll wrapper
 var wrap = $("#mainWrapper");
+var mainHeaderBanner = $("#mainHeaderBanner");
 var mainBanner = $("#mainBanner");
 
 $('document').ready(function(){
 	header = document.getElementById('mainHeader');
+	mainHeaderBanner.addClass("headerStateOne");
 	banner = document.getElementById('mainBanner');
 	headerWidth = header.clientWidth;
 	headerHeight = header.clientHeight;
@@ -53,11 +55,12 @@ $(window).bind("resize", function() {
 wrap.on("scroll", function(e) {
 	debugScrollPosition.text(this.scrollTop);
 	if (this.scrollTop > (bannerHeight - headerHeight - 4)) {
-		debugCurrentState.text("Banner displayed");
-		mainBanner.addClass("headerBanner");
-		mainBanner.style.transform("translate(0, ${headerHeight - bannerHeight + 4})");
-	} else {
 		debugCurrentState.text("Banner in header");
-		mainBanner.removeClass("headerBanner");
+		mainHeaderBanner.removeClass("headerStateOne");
+		mainHeaderBanner.addClass("headerStateTwo");
+	} else {
+		debugCurrentState.text("Banner displayed");
+		mainHeaderBanner.removeClass("headerStateTwo");
+		mainHeaderBanner.addClass("headerStateOne");
 	}
 });

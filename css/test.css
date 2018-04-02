@@ -20,8 +20,30 @@ header {
 	left: 0;
 	width: 100vw;
 	height: 15vh;
-	background-color: #0000ff4d;
 	z-index: 3;
+	background-color: #2d2d2d78;
+}
+
+.headerStateOne {
+	visibility: hidden;
+}
+
+.headerStateTwo {
+	height: 15vh;
+	visibility: visible;
+}
+
+#mainHeaderBanner {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-image: url("../img/milkyWayBackdrop.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .debugLog {
@@ -56,10 +78,14 @@ header {
 
 #mainBanner {
 	position: relative;
+	height: 62.5vw;
+	max-height: 100vh;
 	top: 0;
 }
 
 #mainBanner img {
+	position: absolute;
+	bottom: 0;
 	width: inherit;
 }
 
@@ -78,6 +104,7 @@ section {
 	-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 			justify-content: space-between;
+	background-color: black;
 }
 
 section article {
