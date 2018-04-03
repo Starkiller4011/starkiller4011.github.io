@@ -6,7 +6,8 @@ body {
 .mainWrapper {
 	width: 100vw;
 	height: 100vh;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	position: relative;
 }
 
@@ -21,14 +22,15 @@ header {
 	width: 100vw;
 	height: 15vh;
 	z-index: 3;
-	background-color: #2d2d2d78;
+	background-color: #383838d4;
+	opacity: 0;
 }
 
-.headerStateOne {
+.headerBannerStateOne {
 	visibility: hidden;
 }
 
-.headerStateTwo {
+.headerBannerStateTwo {
 	height: 15vh;
 	visibility: visible;
 }

@@ -20,12 +20,13 @@ var debugScrollPosition = $("#scrollPosition");
 
 // Scroll wrapper
 var wrap = $("#mainWrapper");
+var mainHeader = $("#mainHeader");
 var mainHeaderBanner = $("#mainHeaderBanner");
 var mainBanner = $("#mainBanner");
 
 $('document').ready(function(){
 	header = document.getElementById('mainHeader');
-	mainHeaderBanner.addClass("headerStateOne");
+	mainHeaderBanner.addClass("headerBannerStateOne");
 	banner = document.getElementById('mainBanner');
 	headerWidth = header.clientWidth;
 	headerHeight = header.clientHeight;
@@ -54,13 +55,12 @@ $(window).bind("resize", function() {
 
 wrap.on("scroll", function(e) {
 	debugScrollPosition.text(this.scrollTop);
+	$("#mainHeader").css("opacity", this.scrollTop / bannerHeight);
 	if (this.scrollTop > (bannerHeight - headerHeight - 4)) {
-		debugCurrentState.text("Banner in header");
-		mainHeaderBanner.removeClass("headerStateOne");
-		mainHeaderBanner.addClass("headerStateTwo");
+		mainHeaderBanner.addClass("headerBannerStateTwo");
+		mainHeaderBanner.removeClass("headerBannerStateOne");
 	} else {
-		debugCurrentState.text("Banner displayed");
-		mainHeaderBanner.removeClass("headerStateTwo");
-		mainHeaderBanner.addClass("headerStateOne");
+		mainHeaderBanner.addClass("headerBannerStateOne");
+		mainHeaderBanner.removeClass("headerBannerStateTwo");
 	}
 });
