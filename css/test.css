@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.mainWrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.mainWrapper::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 15vh;
+	z-index: 3;
+	background-color: #383838d4;
+	opacity: 0;
+}
+
+.headerBannerStateOne {
+	visibility: hidden;
+}
+
+.headerBannerStateTwo {
+	height: 15vh;
+	visibility: visible;
+}
+
+#mainHeaderBanner {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-image: url("../img/milkyWayBackdrop.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.debugLog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	width: 300px;
+}
+
+.debugLog .attributes {
+	display: block;
+	height: 20px;
+}
+
+.attributes div {
+	display: inline-block;
+	height: inherit;
+	margin-right: -50%;
+}
+
+.attributes p {
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+}
+
+.banner {
+	width: 100vw;
+}
+
+#mainBanner {
+	position: relative;
+	height: 62.5vw;
+	max-height: 100vh;
+	top: 0;
+}
+
+#mainBanner img {
+	position: absolute;
+	bottom: 0;
+	width: inherit;
+}
+
+.headerBanner {
+	position: fixed !important;
+	transform: 0;
+}
+
+section {
+	padding: 0 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	background-color: black;
+}
+
+section article {
+	width: 90vw;
+	height: 20vh;
+	background: #ccc;
+	margin: 10px auto;
+}
+
