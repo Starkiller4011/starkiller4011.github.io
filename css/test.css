@@ -20,7 +20,12 @@ header {
 	top: 0;
 	left: 0;
 	width: 100vw;
+<<<<<<< Updated upstream
 	height: 15vh;
+=======
+	height: 7vh;
+	background-color: #0000ff4d;
+>>>>>>> Stashed changes
 	z-index: 3;
 }
 
