@@ -1,70 +1,72 @@
-html {
-	margin: 0;
-	padding: 0;
-	-ms-overflow-style: none;
-}
-
-html::-webkit-scrollbar {
-	width: 0 !important
-}
-
 body {
-	margin: 0;
-	padding: 0;
-	-ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-	width: 0 !important
-}
-
-/* **** Banner **** */
-.banner {
-	width: 100%;
-	background-color: grey;
-}
-
-.banner_opacity_filter {
-	height: inherit;
-	width: inherit;
-	background-color: #5d5d5d8a;
-}
-
-#home_banner {
-	height: 80vh;
-	background-image: url("../img/oceanSunset.jpg");
-	background-repeat: no-repeat;
-	background-position: 50% 10%; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#main_header {
-	width: 100%;
-	height: 15vh;
-	position: fixed;
-	top: 0px;
-	margin: 0px;
 	padding: 0px;
-	background-color: blue;
+	margin: 0px;
+}
+
+header {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	float: left;
+	height: 110vh;
+	width: 100%;
+	background-color: cadetblue;
+	opacity: 50%;
+}
+
+header h1 {
+	position: relative;
+	float: left;
+}
+
+header nav {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 10vh;
+	background-color: coral;
+	opacity: 50%;
+}
+
+header nav ul {
+	padding: 0px;
+	margin: 0px;
+	width: inherit;
+}
+
+header nav ul li {
+	padding: 0px;
+	margin: 0px;
+	height: 10px;
+	position: relative;
+	float: left;
+	display: block;
 }
 
 section {
-	height: 85vh;
-	background-color: purple;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	float: left;
+	height: 88vh;
+	width: 100%;
+	background-color: blue;
 }
 
-.content_area {
-	overflow: hidden;
+footer {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	float: left;
+	height: 2vh;
+	width: 100%;
 }
 
-.in_focus .content_area {
-	overflow: scroll;
-	
-}
-
-.in_focus .content_area::-webkit-scrollbar {
-	width: 0 !important
+footer h6 {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	float: left;
 }
