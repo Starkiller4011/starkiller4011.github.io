@@ -11,6 +11,48 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0px;
 }
 
+h1 {
+	font-size: 40pt;
+}
+
+h2 {
+	font-size: 35pt;
+}
+
+h3 {
+	font-size: 30pt;
+}
+
+h4 {
+	font-size: 25pt;
+}
+
+h5 {
+	font-size: 20pt;
+}
+
+h6 {
+	font-size: 16pt;
+}
+
+p {
+	font-size: 12pt;
+}
+
+.very_small_font {
+	font-size: 7pt !important;
+}
+
+.title_group {
+	padding: 0;
+}
+
+.text_block {
+	margin: 5vh auto;
+	text-align: justify;
+	max-width: 600px;
+}
+
 /* ################ Header ################ */
 
 header {
@@ -70,6 +112,10 @@ nav ul li:hover {
     text-shadow: 0px 0px 4px black;
 }
 
+#current_page {
+	text-decoration: underline;
+}
+
 /* ############# Hero  Banner ############# */
 
 #home_title {
@@ -90,7 +136,11 @@ nav ul li:hover {
 	color: white;
 }
 
-.banner_text_main::before {
+.title {
+	display: inline-block;
+}
+
+.title::before {
 	content: " ";
 	display: inline-block;
 	height: 2px;
@@ -98,15 +148,18 @@ nav ul li:hover {
 	position: absolute;
 	top: 50%;
 	width: 80px;
-	background: #fff;
 	right: 100%;
 }
 
-.banner_text_main {
-	font-size: 40px;
+.dark_title::before {
+	background: black;
 }
 
-.banner_text_main::after {
+.light_title::before {
+	background: white;
+}
+
+.title::after {
 	content: " ";
     display: inline-block;
     height: 2px;
@@ -114,18 +167,22 @@ nav ul li:hover {
     position: absolute;
     top: 50%;
     width: 80px;
-	background: #fff;
 	left: 100%;
 }
 
-.banner_text_sub {
-	font-size: 20px;
+.dark_title::after {
+	background: black;
+}
+
+.light_title::after {
+	background: white;
 }
 
 /* ############## Containers ############## */
 
 .container {
 	padding: 0px;
+	display: inline-block;
 }
 
 .h-centered_container {
@@ -245,7 +302,9 @@ section {
 }
 
 #main_bio_photo {
+	margin: 8vh auto;
 	width: 25vw;
+	max-width: 360px;
 }
 
 /* ################ Footer ################ */

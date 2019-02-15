@@ -15,19 +15,19 @@
         <nav class="align_center">
           <ul class="align_left">
             <li class="menu_entry">
-              <a href="Home.html" target="main-window" class="menu_link" id="current_page">Home</a>
+              <a href="Home.html" class="menu_link" id="current_page">Home</a>
             </li>
             <li class="menu_entry">
-              <a href="CodeProjects.html" target="main-window" class="menu_link">Code Projects</a>
+              <a href="CodeProjects.html" class="menu_link">Code Projects</a>
             </li>
             <li class="menu_entry">
-              <a href="Publications.html" target="main-window" class="menu_link">Publications</a>
+              <a href="Publications.html" class="menu_link">Publications</a>
             </li>
             <li class="menu_entry">
-              <a href="Resume.html" target="main-window" class="menu_link">Resume</a>
+              <a href="Resume.html" class="menu_link">Resume</a>
             </li>
             <li class="menu_entry">
-              <a href="Contact.html" target="main-window" class="menu_link">Contact</a>
+              <a href="Contact.html" class="menu_link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -36,37 +36,55 @@
   </header>
   <article class="hero_banner fill_width relative">
     <section class="container fill_parent full_center_parent relative">
-      <div class="container relative full_center_child" id="home_title">
-        <h1 class="banner_text banner_text_main">Derek Blue</h1>
-        <h1 class="banner_text banner_text_sub">B.Sc Mathematics</h1>
+      <div class="container full_center_child title_group" id="home_title">
+        <div class="container relative">
+          <h1 class="banner_text title light_title">Derek Blue</h1>
+        </div>
+        <br />
+        <div class="container relative">
+          <h5 class="banner_text subtitle">B.Sc Mathematics</h5>
+        </div>
       </div>
     </section>
   </article>
   <article>
     <section class="relative top align_center">
       <!-- Name Photo Bio -->
-      <div class="relative align_center top">
-        <h1>Derek Blue</h1>
-        <h6></h6>
+      <div class="container relative title_group">
+        <div class="container relative">
+          <h1 class="title dark_title">Derek Blue</h1>
+        </div>
+        <br />
+        <div class="container relative">
+          <h6>Student / Developer</h6>
+        </div>
       </div>
-      <img class="crop-circle" id="main_bio_photo" src="../img/selfImage-Original.jpg">
+      <div class="container fill_width">
+        <img class="crop-circle" id="main_bio_photo" src="../img/selfImage-Original.jpg">
+      </div>
       <div class="relative align_center">
-        <h3>About Me</h3>
-        <p>
-
-        </p>
+        <div class="container relative">
+          <h3 class="title dark_title">About Me</h3>
+        </div>
+        <div class="text_block">
+          <p>
+            I am a student of mathematics and logic with a passion for applying both to real-world problems.
+            I have a hand full of fun projects I am currently working on and a couple of finished work that I
+            have done for various groups and organiztions. My most recent accomplishment is the completion of
+            a program for applying a structure function to unevenly sampled time-series data. This program was
+            used for analysis of some of the data in my honors thesis as well as a published paper, the latter
+            of which can be found on my pubblications page. To see the program itself you can visit my Code
+            Projects page which will also contain a link to my GitHub where the program is hosted.
+          </p>
+        </div>
       </div>
     </section>
   </article>
-  <footer>
-    <h6>Copyright (C) Derek Blue</h6>
+  <footer class="full_center_parent">
+    <div class="container full_center_child">
+      <h6 class="very_small_font">Site design / logos &copy 2019 Derek Blue</h6>
+    </div>
   </footer>
 </body>
 
 </html>
-
-
-
-<!--
-<div class="mask" id="grey_mask"></div>
--->
