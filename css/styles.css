@@ -1,8 +1,14 @@
-/* ################# Body ################# */
+/* ################# Base ################# */
 
 body {
 	padding: 0px;
 	margin: 0px;
+}
+
+main {
+	margin-top: 5vh;
+	width: 100%;
+	background-color: aqua;
 }
 
 /* ################# Text ################# */
@@ -305,6 +311,24 @@ section {
 	margin: 8vh auto;
 	width: 25vw;
 	max-width: 360px;
+}
+
+/* ################# Aside ################ */
+
+aside {
+	margin: 0px;
+	padding: 0px;
+	width: 10vw;
+	position: absolute;
+	background-color: blueviolet;
+}
+
+.left-side-bar {
+	left: 0px;
+}
+
+.right-side-bar {
+	right: 0px;
 }
 
 /* ################ Footer ################ */
