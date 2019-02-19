@@ -1,0 +1,19 @@
+#home-banner {
+	background-image: url("../img/olympicMountains1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #cccccc;
+}
+
+
+div.bio-image {
+  width: 15vw;
+  min-width: 150px;
+}
+
+/* OVERRIDE */
+.text-block {
+  max-width: 800px;
+  text-align: justify !important;
+}
