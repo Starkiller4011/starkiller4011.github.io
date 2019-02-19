@@ -9,6 +9,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="Derek Blue, Derek Matthew Blue">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../js/javascript.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/main-theme.css">
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <script src="js/functions.js"></script>
@@ -18,13 +19,15 @@
   <!-- Main Nav Menu -->
   <header class="main-menu drop-shadow">
     <div class="fill-parent flex-container solid-white align-center">
-      <div class="menu-button">
-        <svg height="100%" version="1.1" viewBox="0 0 52.917 52.917">
-          <path d="m23.631 50.017c-3.298-1.7229-4.316-5.7017-2.2554-8.8154 2.3214-3.5079 7.7286-3.5015 10.054 0.01192 1.396 2.1095 1.3778 4.9197-0.04514 6.9573-1.0046 1.4385-3.2424 2.6101-4.9857 2.6101-0.89724 0-1.7621-0.23874-2.7675-0.764zm1.6735-17.824c-4.8905-0.95184-6.7142-7.0903-3.102-10.441 1.2607-1.1694 2.4983-1.6586 4.196-1.6586 4.4354 0 7.3486 4.4872 5.5512 8.5504-1.1059 2.5-4.0251 4.0591-6.6452 3.5491zm-0.59122-18.112c-1.2991-0.34596-3.1083-1.9063-3.8138-3.2891-1.5203-2.98 0.03567-6.9863 3.2339-8.3266 1.1295-0.47333 3.4009-0.47333 4.5304 0 3.1982 1.3402 4.7542 5.3465 3.2339 8.3266-0.74783 1.4659-2.5281 2.941-3.9952 3.3104-1.3829 0.34822-1.8124 0.34535-3.1891-0.02128z"
-            fill="#272727" stroke-width=".2735" />
-        </svg>
+      <div id="nav-menu-button">
+        <div class="menu-button">
+          <svg height="100%" version="1.1" viewBox="0 0 52.917 52.917">
+            <path d="m23.631 50.017c-3.298-1.7229-4.316-5.7017-2.2554-8.8154 2.3214-3.5079 7.7286-3.5015 10.054 0.01192 1.396 2.1095 1.3778 4.9197-0.04514 6.9573-1.0046 1.4385-3.2424 2.6101-4.9857 2.6101-0.89724 0-1.7621-0.23874-2.7675-0.764zm1.6735-17.824c-4.8905-0.95184-6.7142-7.0903-3.102-10.441 1.2607-1.1694 2.4983-1.6586 4.196-1.6586 4.4354 0 7.3486 4.4872 5.5512 8.5504-1.1059 2.5-4.0251 4.0591-6.6452 3.5491zm-0.59122-18.112c-1.2991-0.34596-3.1083-1.9063-3.8138-3.2891-1.5203-2.98 0.03567-6.9863 3.2339-8.3266 1.1295-0.47333 3.4009-0.47333 4.5304 0 3.1982 1.3402 4.7542 5.3465 3.2339 8.3266-0.74783 1.4659-2.5281 2.941-3.9952 3.3104-1.3829 0.34822-1.8124 0.34535-3.1891-0.02128z"
+              fill="#272727" stroke-width=".2735" />
+          </svg>
+        </div>
       </div>
-      <nav>
+      <nav id="nav-menu">
         <ul>
           <li>
             <a href="Home.html" id="current-page">Home</a>
@@ -39,22 +42,20 @@
             <a href="Resume.html">Resume</a>
           </li>
           <li>
-            <a href="About.html">About</a>
-          </li>
-          <li>
-            <a href="Contact.html">Contact</a>
+            <a href="Hobbies.html">Hobbies</a>
           </li>
         </ul>
+        <div id="nav-menu-overlay"></div>
       </nav>
     </div>
   </header>
   <!-- Hero Banner -->
-  <div class="hero-banner standard-container" id="home-banner">
-    <div class="title-group white-text">
+  <div class="hero-banner standard-container" id="main-banner">
+    <div class="title-group white-text" id="main-title">
       <div class="main-title-wrapper">
         <h1 class="main-title white-title">Derek Blue</h1>
       </div>
-      <h5 class="sub-title">B.Sc. Mathematics</h5>
+      <p class="sub-title">B.Sc. Mathematics</p>
     </div>
   </div>
   <!-- Start Main Content -->
@@ -65,32 +66,6 @@
     <main>
       <article>
         <header class="standard-container">
-          <h1>This is H1</h1>
-        </header>
-        <header class="standard-container">
-          <h2>This is H2</h2>
-        </header>
-        <header class="standard-container">
-          <h3>This is H3</h3>
-        </header>
-        <header class="standard-container">
-          <h4>This is H4</h4>
-        </header>
-        <header class="standard-container">
-          <h5>This is H5</h5>
-        </header>
-        <header class="standard-container">
-          <h6>This is H6</h6>
-        </header>
-        <header class="standard-container">
-          <p>This is p</p>
-        </header>
-        <header class="standard-container">
-          <p class="very-small-text">This is very-small-text</p>
-        </header>
-      </article>
-      <article>
-        <header class="standard-container">
           <div class="title-group dark-text">
             <div class="main-title-wrapper">
               <h1 class="main-title dark-title">About Me</h1>
@@ -99,7 +74,9 @@
           </div>
         </header>
         <section class="standard-container">
-          <div class="bio-image"><img class="crop-circle" alt="Self-Portrait" data-description="Self portrait for bio" src="../img/selfImage-Original.jpg"></div>
+          <div class="bio-image">
+            <img class="crop-circle" alt="Self-Portrait" data-description="Self portrait for bio" src="../img/selfImage-Original.jpg">
+          </div>
         </section>
         <header class="standard-container">
           <h6 class="sub-title light-text">I like to make things happen</h6>
@@ -121,6 +98,9 @@
   </div>
   <!-- Footer -->
   <footer>
+      <div class="footer-block">
+        <p class="very-small-text light-text">Contact</p>
+      </div>
     <!-- External Links -->
     <div class="social-media">
       <ul>
@@ -208,9 +188,9 @@
       <a class="very-small-text light-text" href="mailto:derekmblue4011@gmail.com?Subject=Contacting%20from%20website" target="_top">derekmblue4011@gmail.com</a>
     </div> -->
     <!-- Copyright -->
-    <div class="copyright-block">
-      <p class="very-small-text light-text">Site design &copy 2019 Derek Blue</p>
-    </div>
+    <div class="footer-block">
+        <p class="very-small-text light-text">Site design &copy 2019 Derek Blue</p>
+      </div>
   </footer>
 </body>
 
