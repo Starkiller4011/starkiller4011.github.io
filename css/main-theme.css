@@ -390,7 +390,7 @@ img.crop-circle {
   }
 
   #nav-menu {
-    display: block;
+    display: block !important;
   }
 
   nav ul {
