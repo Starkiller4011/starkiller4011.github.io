@@ -1,91 +1,186 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-US">
 
 <head>
-  <meta charset="utf-8" http-equiv="Content-Type" content="text/html" />
-  <title>Derek Blue: Home</title>
-  <link rel="stylesheet" type="text/css" href="../css/styles.css">
-  <script type="text/javascript" src="../js/jquery/jquery-3.3.1.js"></script>
+  <title>Re-Learning Web Development</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="author" content="Derek Blue">
+  <meta name="description" content="">
+  <meta name="keywords" content="Derek Blue, Derek Matthew Blue">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/main-style.css">
+  <link rel="stylesheet" type="text/css" href="../css/home.css">
+  <script src="js/functions.js"></script>
 </head>
 
 <body>
-  <header class="drop_shadow">
-    <div class="mask white_mask absolulte fill_parent">
-      <div class="container absolute bottom fill_width">
-        <nav class="align_center">
-          <ul class="align_left">
-            <li class="menu_entry">
-              <a href="Home.html" class="menu_link" id="current_page">Home</a>
-            </li>
-            <li class="menu_entry">
-              <a href="Projects.html" class="menu_link">Projects</a>
-            </li>
-            <li class="menu_entry">
-              <a href="Publications.html" class="menu_link">Publications</a>
-            </li>
-            <li class="menu_entry">
-              <a href="Resume.html" class="menu_link">Resume</a>
-            </li>
-            <li class="menu_entry">
-              <a href="Recreation.html" class="menu_link">Recreation</a>
-            </li>
-            <li class="menu_entry">
-              <a href="Contact.html" class="menu_link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <header class="main-menu drop-shadow">
+    <div class="fill-parent flex-container solid-white align-center">
+      <nav>
+        <ul>
+          <li>
+            <a href="Home.html" id="current-page">Home</a>
+          </li>
+          <li>
+            <a href="Projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="Publications.html">Publications</a>
+          </li>
+          <li>
+            <a href="Resume.html">Resume</a>
+          </li>
+          <li>
+            <a href="About.html">About</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <article class="hero_banner fill_width relative">
-    <section class="container fill_parent full_center_parent relative">
-      <div class="container full_center_child title_group" id="home_title">
-        <div class="container relative">
-          <h1 class="banner_text title light_title">Derek Blue</h1>
-        </div>
-        <br />
-        <div class="container relative">
-          <h5 class="banner_text subtitle">B.Sc Mathematics</h5>
-        </div>
+  <div class="hero-banner standard-container" id="home-banner">
+    <div class="title-group white-text">
+      <div class="main-title-wrapper">
+        <h1 class="main-title white-title banner-text">Derek Blue</h1>
       </div>
-    </section>
-  </article>
-  <article>
-    <section class="relative top align_center">
-      <!-- Name Photo Bio -->
-      <div class="container relative title_group">
-        <div class="container relative">
-          <h1 class="title dark_title">Derek Blue</h1>
-        </div>
-        <br />
-        <div class="container relative">
-          <h6>Student / Developer</h6>
-        </div>
-      </div>
-      <div class="container fill_width">
-        <img class="crop-circle" id="main_bio_photo" src="../img/selfImage-Original.jpg">
-      </div>
-      <div class="relative align_center">
-        <div class="container relative">
-          <h3 class="title dark_title">About Me</h3>
-        </div>
-        <div class="text_block">
-          <p>
-            I am a student of mathematics and logic with a passion for applying both to real-world problems.
-            I have a hand full of fun projects I am currently working on and a couple of finished work that I
-            have done for various groups and organiztions. My most recent accomplishment is the completion of
-            a program for applying a structure function to unevenly sampled time-series data. This program was
-            used for analysis of some of the data in my honors thesis as well as a published paper, the latter
-            of which can be found on my pubblications page. To see the program itself you can visit my Code
-            Projects page which will also contain a link to my GitHub where the program is hosted.
+      <h5 class="sub-title">B.Sc. Mathematics</h5>
+    </div>
+  </div>
+  <div class="main-content-wrapper">
+    <aside class="left-aside"></aside>
+    <main>
+      <article>
+        <header class="standard-container">
+          <div class="title-group dark-text">
+            <div class="main-title-wrapper">
+              <h1 class="main-title dark-title">About Me</h1>
+            </div>
+            <h6 class="sub-title light-text">Student | Developer</h6>
+          </div>
+        </header>
+        <section class="standard-container">
+          <div class="bio-image"><img class="crop-circle" alt="Self-Portrait" data-description="Self portrait for bio" src="img/selfImage-Original.jpg"></div>
+        </section>
+        <header class="standard-container">
+          <h6 class="sub-title light-text">I like to make things happen</h6>
+        </header>
+        <section class="standard-container">
+          <p class="text-block">
+            I am a student of mathematics and logic with a passion for applying both to real-world problems. I have a hand full of fun
+            projects I am currently working on and a couple of finished work that I have done for various groups and organiztions.
+            My most recent accomplishment is the completion of a program for applying a structure function to unevenly sampled
+            time-series data. This program was used for analysis of some of the data in my honors thesis as well as a published
+            paper, the latter of which can be found on my pubblications page. To see the program itself you can visit my
+            Code Projects page which will also contain a link to my GitHub where the program is hosted.
           </p>
+        </section>
+        <section class="standard-container">
+          <p class="text-block small-text-block">
+            I am a student of mathematics and logic with a passion for applying both to real-world problems. I have a hand full of fun
+            projects I am currently working on and a couple of finished work that I have done for various groups and organiztions.
+            My most recent accomplishment is the completion of a program for applying a structure function to unevenly sampled
+            time-series data. This program was used for analysis of some of the data in my honors thesis as well as a published
+            paper, the latter of which can be found on my pubblications page. To see the program itself you can visit my
+            Code Projects page which will also contain a link to my GitHub where the program is hosted.
+          </p>
+        </section>
+      </article>
+      <section class="itg-container">
+        <div class="itg-img">
+          <img src="img/selfImage-Original.jpg">
         </div>
-      </div>
-    </section>
-  </article>
-  <footer class="full_center_parent">
-    <div class="container full_center_child">
-      <h6 class="very_small_font">Site design / logos &copy 2019 Derek Blue</h6>
+        <div class="itg-text">
+          <div class="text-group">
+            <header class="no-margin">
+              <div class="title-group align-text-left light-text">
+                <h4>About this object</h4>
+                <p>It is an important thing</p>
+              </div>
+            </header>
+            <p>
+              I am a student of mathematics and logic with a passion for applying both to real-world problems. I have a hand full of fun
+              projects I am currently working on and a couple of finished work that I have done for various groups and organiztions.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside class="right-aside"></aside>
+  </div>
+  <footer>
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="https://twitter.com/DerekBlue4011" data-ga-click="Footer, go to Twitter, text:twitter" title="Derek Blue on Twitter" target="_blank">
+            <svg width="20px" height="20px" version="1.1" viewBox="0 0 52.917 52.917">
+              <g transform="translate(0 -244.08)">
+                <path d="m11.738 290.24c-2.7954-0.62178-6.2331-1.759-8.2149-2.7177l-2.4298-1.1753 2.3141-0.171c4.7004-0.34736 8.2953-1.5018 11.541-3.7062l1.4161-0.96166-1.4012-0.28361c-3.1597-0.6395-5.3612-1.9261-6.9709-4.0737-0.83505-1.1141-1.4644-2.2673-1.4596-2.6742 0.0011-0.0895 0.89393-0.17561 1.9841-0.19143 2.0767-0.0301 3.0291-0.39127 1.8077-0.68548-0.36841-0.0887-1.0864-0.36791-1.5955-0.62038-3.3882-1.6803-5.6367-4.7436-6.0554-8.2496-0.13996-1.172-0.12098-1.2413 0.29167-1.0638 1.4206 0.61076 2.8551 1.0306 3.5442 1.0372l0.78875 8e-3 -1.3781-1.4463c-0.75798-0.79589-1.5958-1.8112-1.8619-2.2566-1.3518-2.2633-1.6792-6.0171-0.77406-8.8736l0.50203-1.5843 1.6578 1.5843c0.91182 0.87138 1.8157 1.7483 2.0086 1.9486 0.58505 0.60765 2.3532 1.9372 3.8218 2.8739 3.2674 2.0839 8.3645 3.9572 12.264 4.5075 2.6501 0.37397 2.4298 0.56292 2.4298-2.0838 0-2.0441 0.08612-2.5448 0.72069-4.1903 0.96789-2.5098 2.8082-4.4356 5.4391-5.6918 1.7502-0.83568 1.9216-0.87077 4.2535-0.87077 2.2642 0 2.548 0.0533 4.1653 0.78249 0.95455 0.43037 2.1263 1.1333 2.604 1.562 1.2316 1.1055 2.0086 1.0407 5.2638-0.43895 0.7-0.31817 1.5191-0.65364 1.8203-0.74549l0.54758-0.16699-0.66328 1.2196c-0.36481 0.67078-1.3151 1.8608-2.1118 2.6445-0.79668 0.78369-1.3928 1.4806-1.3247 1.5487 0.19817 0.19817 2.3729-0.26198 3.9589-0.83764l1.4593-0.52969-0.47466 0.6047c-0.70049 0.8924-2.2848 2.5546-3.479 3.65l-1.0495 0.96269-0.1325 2.5117c-0.25316 4.7988-1.9016 10.373-4.2345 14.319-1.5766 2.6667-2.7543 4.1727-5.063 6.4747-4.1007 4.0886-8.7739 6.5388-15.012 7.8708-1.4943 0.31908-9.6865 0.45424-10.919 0.18014z"
+                  fill="#272727" stroke-width=".23141" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/derek.matthew.blue" data-ga-click="Footer, go to Facebook, text:facebook" title="Derek Blue on Facebook" target="_blank">
+            <svg width="20px" height="20px" version="1.1" viewBox="0 0 52.917 52.917">
+              <g transform="translate(0 -244.08)">
+                <path d="m7.9502 296.63c-1.7392-0.22543-3.434-1.0769-4.8626-2.443-1.2379-1.1837-2.1552-2.7283-2.5883-4.358-0.18238-0.68627-0.19048-1.5072-0.19048-19.301s0.0081-18.615 0.19048-19.301c0.4331-1.6297 1.3505-3.1743 2.5883-4.358 0.87613-0.83781 1.4609-1.2388 2.5279-1.7334 1.8047-0.83663-0.03193-0.76891 20.855-0.76891 17.794 0 18.615 8e-3 19.301 0.19047 1.6297 0.4331 3.1743 1.3504 4.358 2.5883 0.83781 0.87614 1.2388 1.4609 1.7334 2.5279 0.83663 1.8047 0.76891-0.0319 0.76891 20.855 0 20.887 0.0677 19.05-0.76891 20.855-0.49463 1.067-0.89563 1.6518-1.7334 2.5279-0.84735 0.88612-1.6977 1.4968-2.7869 2.0013-1.6549 0.76661-1.5714 0.75759-7.4331 0.80289l-5.2476 0.0405v-19.777h8.7034v-8.8058h-8.7149l0.03135-2.1247c0.02937-1.9909 0.04654-2.1555 0.27268-2.6148 0.1374-0.27904 0.40119-0.59874 0.61253-0.74235l0.3712-0.25223h7.4272v-8.8058h-3.9866c-4.3543 0-4.7905 0.0425-6.1865 0.60225-3.0695 1.2308-5.4281 4.0619-6.3829 7.6615-0.24488 0.92315-0.2698 1.2124-0.31358 3.6395l-0.04756 2.6366h-6.4284v8.8058h6.4508v19.762l-8.9338-0.013c-4.9136-7e-3 -9.2274-0.051-9.5863-0.0976z"
+                  fill="#272727" stroke-width=".10239" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCCFmLbVZLfOVJWu3CjQ0Zew" data-ga-click="Footer, go to YouTube, text:youtube" title="Derek Blue on YouTube" target="_blank">
+            <svg width="20px" height="20px" version="1.1" viewBox="0 0 52.917 52.917">
+              <g transform="translate(0 -244.08)">
+                <path d="m16.125 287.35c-4.4306-0.15677-8.0908-0.46829-9.3076-0.79215-1.9788-0.52669-3.7589-1.8426-4.6059-3.405-1.0244-1.8895-1.5076-6.2017-1.5076-13.454 0-6.7489 0.50345-11.699 1.3607-13.379 0.7681-1.5056 2.3707-2.871 4.0706-3.4682 2.483-0.8723 15.981-1.3732 27.531-1.0217 12.287 0.37391 13.91 0.63451 16.01 2.5702 1.0769 0.99266 1.7635 2.5545 2.1297 4.8447 1.1775 7.3638 0.7716 20.449-0.73376 23.656-0.57704 1.2291-1.8763 2.4524-3.3244 3.1301-0.9559 0.44732-1.7758 0.64192-3.6041 0.8555-5.0143 0.58573-18.346 0.80674-28.018 0.46449zm11.88-13.588c3.4944-2.1455 6.4241-3.9662 6.5104-4.0461 0.12787-0.11838-12.645-8.153-12.961-8.153-0.05227 0-0.09503 3.6225-0.09503 8.05s0.0433 8.05 0.09623 8.05 2.9553-1.7554 6.4497-3.9009z"
+                  fill="#272727" stroke-width=".19398" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/captainpr0t0n" data-ga-click="Footer, go to Twitch, text:twitch" title="Derek Blue on Twitch" target="_blank">
+            <svg width="20px" height="20px" version="1.1" viewBox="0 0 52.917 52.917">
+              <g transform="translate(0 -244.08)">
+                <path d="m13.734 296.47c-0.02778-0.075-0.06304-1.2646-0.07834-2.6436l-0.02782-2.5073-9.5374-0.0568-0.02785-19.349c-0.01532-10.642 6.72e-4 -19.361 0.03553-19.376 0.05619-0.0242 0.44724-1.4264 0.6004-2.153 0.0316-0.1499 0.25223-1.0329 0.49029-1.9622 0.23806-0.92934 0.45461-1.7878 0.48122-1.9077 0.24036-1.0833 0.42883-1.7665 0.5187-1.8805 0.08533-0.1082 4.5844-0.13627 21.842-0.13627h21.735v29.732l-17.052 17.034h-8.4045l-5.3383 5.3416h-2.5933c-1.975 0-2.6054-0.0325-2.6438-0.13626zm9.5862-13.599 3.1636-3.1614h11.675l7.4644-7.3652v-23.704h-35.32v31.066l9.5386 0.0568 0.02893 3.1341c0.0214 2.3189 0.06238 3.1341 0.15754 3.1341 0.07074 0 1.5522-1.4226 3.2922-3.1614zm-1.0687-13.036c-0.08644-0.22526-0.08644-12.184 0-12.41 0.05691-0.14829 0.33761-0.17243 2.0051-0.17243 1.6675 0 1.9482 0.0241 2.0051 0.17243 0.08644 0.22527 0.08644 12.184 0 12.41-0.05691 0.1483-0.33761 0.17244-2.0051 0.17244-1.6675 0-1.9482-0.0241-2.0051-0.17244zm11.734-6.1776 0.02813-6.35 3.979-0.0594v12.759h-4.0352z"
+                  fill="#272727" stroke-width=".10901" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/derek-blue-b95246180/" data-ga-click="Footer, go to LinkedIN, text:linkedin" title="Derek Blue on LinkedIN" target="_blank">
+            <svg width="20px" height="20px" version="1.1" viewBox="0 0 52.917 52.917">
+              <g transform="translate(0 -244.08)">
+                <path d="m3.6435 296.12c-0.60682-0.10326-1.4087-0.543-1.7973-0.98559-0.16898-0.19245-0.42398-0.59883-0.56668-0.90307l-0.25946-0.55317v-45.984l0.25946-0.55317c0.3703-0.78949 0.80831-1.2406 1.5674-1.6143l0.66267-0.32623h45.992l0.66267 0.32623c0.75907 0.37369 1.1971 0.82481 1.5674 1.6143l0.25945 0.55317v45.988l-0.32623 0.66266c-0.37369 0.75908-0.8248 1.1971-1.6143 1.5674l-0.55316 0.25946-22.693 0.0139c-12.481 8e-3 -22.904-0.0219-23.161-0.0658zm14.882-22.242v-11.172h-6.3839v22.344h6.3839zm9.596 4.364 0.03039-6.8078 0.22776-0.56424c0.45353-1.1235 1.4487-1.7063 2.9136-1.7063 1.0565 0 1.7131 0.23363 2.2966 0.81717 0.87212 0.87212 0.83464 0.5172 0.87235 8.2612l0.0331 6.8078h6.386l-0.0404-7.6058c-0.0384-7.2221-0.0511-7.6614-0.25042-8.7086-0.66905-3.514-2.2147-5.3341-4.9995-5.8872-1.279-0.25403-3.8687-0.1599-4.9056 0.1783-1.2679 0.41354-1.9934 1.0344-2.3875 2.043l-0.18737 0.47954-0.0047-1.4214-0.0047-1.4214h-6.3839v22.344h6.3737zm-11.634-17.298c0.7009-0.23771 1.6454-1.1961 1.8822-1.9098 0.24334-0.73352 0.18529-1.8937-0.12665-2.5313-0.29192-0.59668-0.89515-1.2005-1.4939-1.4955-0.67802-0.33396-2.1538-0.33396-2.8318 0-0.59917 0.29513-1.2024 0.89918-1.4933 1.4955-0.27656 0.56676-0.36424 1.716-0.18089 2.3709 0.24331 0.86903 1.0824 1.7609 1.9592 2.0825 0.53447 0.19603 1.6893 0.18983 2.2852-0.0123z"
+                  fill="#272727" stroke-width=".099748" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Starkiller4011" data-ga-click="Footer, go to GitHub, text:github" title="Derek Blue on GitHub" target="_blank">
+            <svg width="20px" height="20px" version="1.1" viewBox="0 0 52.917 52.917">
+              <g transform="translate(0 -244.08)">
+                <path d="m17.617 294.62c-0.54278-0.21076-1.6161-0.69603-2.3852-1.0784-6.6455-3.3039-11.74-9.9211-13.26-17.224-0.62054-2.981-0.67189-6.6468-0.13668-9.7574 1.1427-6.6413 5.2106-12.782 10.98-16.574 3.0794-2.024 6.4357-3.3042 10.18-3.883 1.6051-0.24811 5.6977-0.24811 7.3029 0 3.7409 0.57825 7.1013 1.8593 10.172 3.8779 5.8546 3.8481 9.9013 10.017 11.032 16.816 0.48644 2.9251 0.41706 6.6467-0.17713 9.5004-1.3134 6.3077-5.2482 12.096-10.727 15.78-1.9217 1.2921-5.4987 2.9417-6.3824 2.9434-0.45199 8.9e-4 -0.90575-0.21742-1.0777-0.51842-0.09511-0.16646-0.13995-1.3296-0.18163-4.7113-0.04755-3.8578-0.07948-4.5737-0.2267-5.0824-0.25652-0.88645-0.58984-1.5551-1.0034-2.0129-0.20382-0.22561-0.35325-0.42448-0.33207-0.44196 0.02118-0.0175 0.4382-0.0858 0.9267-0.15183 3.4876-0.47146 6.3931-1.8824 8.0293-3.899 1.0301-1.2696 1.8271-3.1843 2.2009-5.2875 0.27279-1.5348 0.2937-4.234 0.04167-5.3784-0.32965-1.497-1.1133-3.1106-2.0479-4.2169l-0.31095-0.36808 0.17075-0.52011c0.30366-0.92495 0.40692-2.1308 0.27986-3.2679-0.12894-1.1539-0.63545-2.8749-0.87292-2.966-0.91831-0.35239-3.6006 0.58324-6.0866 2.1231l-0.76702 0.4751-1.0587-0.23582c-2.1609-0.48133-4.3418-0.65719-6.5986-0.53207-1.5689 0.087-2.4453 0.20643-3.9121 0.53318l-1.0636 0.23692-0.68378-0.43829c-2.3301-1.4935-5.6028-2.5937-6.2415-2.0981-0.19361 0.15021-0.53314 1.226-0.72417 2.2945-0.23739 1.3278-0.16221 2.6694 0.21726 3.8768l0.16388 0.52144-0.30987 0.36674c-0.53122 0.62873-1.2898 1.9117-1.5876 2.685-0.49784 1.2929-0.63462 2.1453-0.63354 3.9484 0.0012 1.9897 0.20156 3.3474 0.73331 4.9687 0.91364 2.7858 2.2909 4.4284 4.787 5.7095 1.508 0.77396 3.0188 1.2241 5.0115 1.4932l0.87506 0.11816-0.35046 0.41948c-0.46872 0.56102-0.81594 1.296-1.0351 2.1909l-0.18081 0.73838-0.64469 0.22117c-0.90733 0.31127-2.3896 0.47301-3.1337 0.34194-1.3212-0.23272-2.2874-0.96019-3.3514-2.5233-0.38554-0.5664-0.93136-1.2313-1.2129-1.4777-0.61107-0.53455-1.735-1.1202-2.3512-1.2252-0.58004-0.0988-1.3433-3e-3 -1.5397 0.19347-0.13956 0.13956-0.14036 0.18528-0.0077 0.43943 0.17876 0.34237 0.57114 0.71618 1.1032 1.051 0.89229 0.56151 1.7732 1.7501 2.4755 3.3402 0.69746 1.579 1.2517 2.1883 2.5575 2.8112 1.0068 0.4803 2.2787 0.66504 4.0955 0.59488 0.78703-0.0304 1.5531-0.0843 1.7024-0.11985l0.27139-0.0646v2.4836c0 2.7315-0.0357 2.9262-0.58889 3.2123-0.45449 0.23502-1.0532 0.16396-2.125-0.2522z"
+                  fill="#272727" stroke-width=".098687" />
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="email-block">
+      <p class="very-small-text light-text">Email: </p>
+      <a class="very-small-text light-text" href="mailto:derekmblue4011@gmail.com?Subject=Contacting%20from%20website" target="_top">derekmblue4011@gmail.com</a>
+    </div>
+    <div class="copyright-block">
+      <p class="very-small-text light-text">Site design / logos &copy 2019 Derek Blue</p>
     </div>
   </footer>
 </body>
